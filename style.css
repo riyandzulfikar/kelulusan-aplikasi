@@ -1,0 +1,117 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+}
+
+/* Container Responsive */
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.countdown {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+ .logo {
+            width: 100px; /* Ukuran standar yang lebih kecil */
+            height: auto;
+            margin: 0 auto 15px; /* Margin lebih rapat */
+            display: block;
+        }
+
+/* Form Elements */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 0.8rem 0;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    background-color: #bb934c;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #3d8b40;
+    transform: translateY(-2px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+        width: 85%;
+    }
+    
+    input, button {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+        align-items: flex-start;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 1.2rem;
+        border-radius: 8px;
+        margin-top: 2rem;
+    }
+    
+    button {
+        padding: 12px;
+    }
+}
+
+/* Landscape Mobile Optimization */
+@media (max-height: 500px) and (orientation: landscape) {
+    body {
+        align-items: flex-start;
+        padding-top: 2rem;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+    }
+}
